@@ -104,8 +104,8 @@ NS.toggle_show = function(e) {
     // should be of class .nav-collapse.
     var myTarget = this.get('parentNode').one(this.getAttribute('data-target'));
     if (myTarget) {
-        this.siblings(".btn-navbar").removeClass(CSS.ACTIVE);
-        myTarget.siblings(".nav-collapse").removeClass(CSS.ACTIVE);
+        this.siblings(".btn-navbar").toggleClass(CSS.ACTIVE);
+        myTarget.siblings(".nav-collapse").toggleClass(CSS.ACTIVE);
         myTarget.toggleClass(CSS.ACTIVE);
     }
     e.currentTarget.toggleClass(CSS.ACTIVE);
